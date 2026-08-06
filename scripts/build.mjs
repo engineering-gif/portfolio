@@ -15,6 +15,12 @@ const p = (...s) => path.join(ROOT, ...s)
 const catalog = JSON.parse(await readFile(p('build', 'catalog.json'), 'utf8'))
 const config = JSON.parse(await readFile(p('site.config.json'), 'utf8'))
 
+// Videos are served from object storage (see videoBaseUrl); posters stay on
+// Pages so a page view doesn't fire 50+ requests at the rate-limited r2.dev
+// domain. Clear videoBaseUrl to go back to fully self-hosted video.
+const VIDEO_BASE = (config.videoBaseUrl ?? '').replace(/\/$/, '')
+const videoUrl = src => (VIDEO_BASE ? `${VIDEO_BASE}/${src.replace(/^media\//, '')}` : src)
+
 const index = new Map(catalog.map(a => [`${a.brand}/${a.slug}`, a]))
 const used = new Set()
 const errors = []
@@ -43,7 +49,7 @@ const sections = config.sections.map(sec => {
         type: 'video',
         title: it.title,
         note: it.note ?? null,
-        src: a.src,
+        src: videoUrl(a.src),
         poster: a.poster,
         width: a.width,
         height: a.height,

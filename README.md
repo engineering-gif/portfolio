@@ -49,3 +49,36 @@ from ~15% into each clip to avoid fade-ins.
 Videos are never loaded on page load. Each card renders only its poster
 (`loading="lazy"`); the video element is created on hover and torn down on
 leave, and the lightbox loads the full file only on click.
+
+## Hosting
+
+Live at https://engineering-gif.github.io/portfolio/ — deployed by
+`.github/workflows/deploy.yml` on every push to `main`.
+
+Split hosting:
+
+- **Video** → Cloudflare R2, via `videoBaseUrl` in `site.config.json`. R2 keys
+  mirror `public/media/` exactly (`boka/spa.mp4`), so the same tree uploads
+  as-is. Clearing `videoBaseUrl` reverts to self-hosted video.
+- **Posters, carousel slides, code** → GitHub Pages. Kept off R2 deliberately:
+  a page view requests ~50 images, and the current `pub-*.r2.dev` domain is
+  rate-limited and not for production.
+
+`public/media/**/*.mp4` is therefore *not* committed — only the 5MB of posters.
+
+### Two gotchas
+
+**Push the right account.** `origin` is `engineering-gif`, but git resolves
+credentials via the *active* `gh` account. Before pushing:
+
+```bash
+gh auth switch --user engineering-gif
+```
+
+Otherwise the push fails with `Permission ... denied to wasay-09`. Note that
+Xcode's gitconfig sets `credential.helper=osxkeychain` globally; this repo
+overrides it locally with `!gh auth git-credential` so it follows `gh`.
+
+**Large pushes fail on a slow uplink.** Anything over ~20MB in one push dies
+with `HTTP 408` / `unexpected disconnect`. `scripts/push-media.sh` exists for
+that case — it commits and pushes in ~8MB chunks and is resumable.
