@@ -1,0 +1,125 @@
+{
+  "siteTitle": "Selected Work",
+  "siteSubtitle": "Video editing & motion design for ad and social campaigns.",
+  "sections": [
+    {
+      "brand": "breaddeath",
+      "name": "Breath Death",
+      "kicker": "Oral care / DTC",
+      "blurb": "Short-form brand spots with a hard edge — punchy cuts, deadpan delivery, built for the feed.",
+      "initialCount": 4,
+      "items": [
+        { "slug": "breaddeath-dare-on-camera", "title": "The Dare" },
+        { "slug": "breaddeath-ad-in-car", "title": "Car Ride" },
+        { "slug": "woman-using-breath-death-product-202608061913", "title": "Product Demo" },
+        { "slug": "breaddeath-woman-pouring-crystals-into-mouth-202608061912", "title": "Crystal Pour" },
+        { "slug": "breaddeath-woman-using-breath-freshener-202608061911", "title": "First Hit" },
+        { "slug": "breaddeathzora-sips-coffee-makes-yikes-202608061912", "title": "Coffee Yikes" }
+      ]
+    },
+    {
+      "brand": "true-health-chiropractic-ads",
+      "name": "True Health Chiropractic",
+      "kicker": "Healthcare / Local",
+      "blurb": "A long-running ad series spanning live-action hooks, clay character work, papercraft and brick-built animation.",
+      "initialCount": 4,
+      "items": [
+        { "slug": "true-health-papercraft-vo", "title": "Papercraft", "note": "Animation · VO" },
+        { "slug": "clay-ad-1-true-202607091955", "title": "Clay Spot I", "note": "Animation" },
+        { "slug": "true-health-brick-built-ad-voiced", "title": "Brick-Built", "note": "Animation · VO" },
+        { "slug": "does-your-lower-back-start-202607302122", "title": "Lower Back Hook" },
+        { "slug": "clay-ad-2-true-202607091955", "title": "Clay Spot II", "note": "Animation" },
+        { "slug": "slouching-over-phone-2-202607302134", "title": "Text Neck" },
+        { "slug": "spine-closeup-2-true-health", "title": "Spine Close-Up II" },
+        { "slug": "spine-closeip-1-tooth-202607091954", "title": "Spine Close-Up I" },
+        { "slug": "true-health-brick-built-ad", "title": "Brick-Built", "note": "Animation · no VO" }
+      ]
+    },
+    {
+      "brand": "solara-naturals-vitamin-c-brightening-serum",
+      "name": "Solara Naturals",
+      "kicker": "Skincare / IG + TikTok campaign",
+      "blurb": "A full Instagram and TikTok launch campaign for the Vitamin C Brightening Serum — seven reels across education, routine, transformation and social-proof pillars.",
+      "initialCount": 4,
+      "items": [
+        { "slug": "batch3-reel3-raw", "title": "14 Days. Same Lighting. No Filter.", "note": "Transformation" },
+        { "slug": "batch3-reel1-raw", "title": "My 5-Minute Morning Routine", "note": "Routine" },
+        { "slug": "batch3-reel2-raw", "title": "The Truth About Vitamin C", "note": "Education" },
+        { "slug": "batch3-reel4-raw", "title": "Stop Believing This About Vitamin C", "note": "Education" },
+        { "slug": "batch3-reel5-raw", "title": "Trying This Viral Serum", "note": "Social proof" },
+        { "slug": "batch3-reel6-raw", "title": "The Night Routine That Fixed My Texture", "note": "Routine" },
+        { "slug": "batch3-reel7-raw", "title": "You're Applying Your Serum Wrong", "note": "Education" }
+      ],
+      "stills": {
+        "title": "Campaign stills",
+        "caption": "Reel covers and in-feed posts from the same campaign.",
+        "slugs": [
+          "batch4-thumbnail1-raw",
+          "batch4-thumbnail2-raw",
+          "batch4-thumbnail3-raw",
+          "batch4-thumbnail4-raw",
+          "batch5-thumbnail5-raw",
+          "batch4-post2-raw",
+          "batch4-post3-raw"
+        ]
+      }
+    },
+    {
+      "brand": "glowback",
+      "name": "GlowBack",
+      "kicker": "App / GLP-1 wellness",
+      "blurb": "App-led social spots plus a swipeable TikTok carousel built for silent, sound-off scrolling.",
+      "initialCount": 4,
+      "items": [
+        { "slug": "tiktok-1-the-weight-loss-gets-celebrated-the-face-changes-don-t-weightlossjourney-glp1journey-facialchanges-over40-glowback-ozempicjourney", "title": "The Weight Loss Gets Celebrated" },
+        { "slug": "app-glowback-woman-showing-phone-app-on-202608061900", "title": "App Walkthrough" },
+        { "slug": "app-boostur-stop-scrolling-for-free", "title": "Stop Scrolling — Cut I" },
+        { "slug": "app-boostur-stop-scrolling-for-free2", "title": "Stop Scrolling — Cut II" }
+      ],
+      "carousel": {
+        "title": "5 Things GLP-1 Does to Your Face",
+        "caption": "Swipeable 8-slide TikTok carousel post.",
+        "slugs": [
+          "tiktok-1-slide-1",
+          "tiktok-1-slide-2",
+          "tiktok-1-slide-3",
+          "tiktok-1-slide-4",
+          "tiktok-1-slide-5",
+          "tiktok-1-slide-6",
+          "tiktok-1-slide-7",
+          "tiktok-1-slide-8"
+        ]
+      }
+    },
+    {
+      "brand": "boka",
+      "name": "Boka",
+      "kicker": "Oral care / App",
+      "blurb": "App-focused social cuts — short hooks, clean product framing, quick payoffs.",
+      "initialCount": 4,
+      "items": [
+        { "slug": "science", "title": "The Science" },
+        { "slug": "cheat-code", "title": "Cheat Code" },
+        { "slug": "confession", "title": "Confession" },
+        { "slug": "spa", "title": "Spa Day" },
+        { "slug": "ad1", "title": "Brand Spot I" },
+        { "slug": "ad2", "title": "Brand Spot II" }
+      ]
+    },
+    {
+      "brand": "misc-ads",
+      "name": "Selected Spots",
+      "kicker": "Range / One-offs",
+      "blurb": "Standalone and spec work across beauty, food, eyewear and explainer formats.",
+      "initialCount": 4,
+      "items": [
+        { "slug": "oreo-animated-ad", "title": "Oreo", "note": "Animated spot" },
+        { "slug": "mac-makeup-ad", "title": "MAC", "note": "Beauty spot" },
+        { "slug": "rice-toner-product-ad", "title": "Rice Toner", "note": "Product spot" },
+        { "slug": "glasses", "title": "Eyewear", "note": "Product spot" },
+        { "slug": "infotainment-video", "title": "Infotainment", "note": "Explainer" },
+        { "slug": "influencer-records-using-phone-t-202607161824", "title": "Influencer UGC" }
+      ]
+    }
+  ]
+}

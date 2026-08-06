@@ -1,0 +1,7 @@
+# Source masters — large, kept local only. The web-ready derivatives in
+# public/media/ are what actually ship.
+ads_library/
+
+.DS_Store
+node_modules/
+*.log

@@ -1,0 +1,5 @@
+# MP4 and JPEG are already compressed. Letting git attempt delta and zlib
+# compression on them costs minutes of CPU per push and saves ~nothing.
+*.mp4 -delta -diff -merge binary
+*.jpg -delta -diff -merge binary
+*.png -delta -diff -merge binary
